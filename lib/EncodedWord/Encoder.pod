@@ -78,6 +78,9 @@ SuikaWiki:encoded-word
 
 =head1 HISTORY
 
+This module was originally developed as part of the Flipnote Hatena
+project.
+
 =over 4
 
 =item 1.0 (2010-08-06)
@@ -92,7 +95,7 @@ Wakaba (id:wakabatan) <wakabatan@hatena.ne.jp>.
 
 =head1 LICENSE
 
-Copyright 2010 Hatena <http://www.hatena.ne.jp/>.
+Copyright 2009-2010 Hatena <http://www.hatena.ne.jp/>.
 
 This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself.
