@@ -1,0 +1,100 @@
+=head1 NAME
+
+EncodedWord::Encoder - Practical but strict encoded-word encoder
+
+=head1 SYNOPSIS
+
+  use EncodedWord::Encoder;
+  
+  # For global messages
+  $output = EncodedWord::Encoder->encode_structured($input);
+  $output = EncodedWord::Encoder->encode_unstructured($input);
+  
+  # For Japanese messages
+  $output = EncodedWord::Encoder->encode_structured_jp($input);
+  $output = EncodedWord::Encoder->encode_unstructured_jp($input);
+  
+  # For Japanese mobile mails
+  $output = EncodedWord::Encoder->encode_structured_sjis($input);
+  $output = EncodedWord::Encoder->encode_unstructured_sjis($input);
+
+=head1 DESCRIPTION
+
+The C<EncodedWord::Encoder> provides encoded-word encoding methods for
+encoding real-world mail/news header texts.
+
+=head1 METHODS
+
+=over 4
+
+=item $output = EncodedWord::Encoder->encode_structured($input);
+
+Encodes the input string in a format that can be used in structured
+header fields.  Characters are encoded in UTF-8.  This method is
+appropriate for use in non-Japanese mail/news messages.
+
+=item $output = EncodedWord::Encoder->encode_unstructured($input);
+
+Encodes the input string in a format that can be used in unstructured
+header fields.  Characters are encoded in UTF-8.  This method is
+appropriate for use in non-Japanese mail/news messages.
+  
+=item $output = EncodedWord::Encoder->encode_structured_jp($input);
+
+Encodes the input string in a format that can be used in structured
+header fields.  Characters are encoded in ISO-2022-JP, if possible, or
+UTF-8.  This method is appropriate for use in non-mobile Japanese
+mail/news messages.
+
+=item $output = EncodedWord::Encoder->encode_unstructured_jp($input);
+
+Encodes the input string in a format that can be used in unstructured
+header fields.  Characters are encoded in ISO-2022-JP, if possible, or
+UTF-8.  This method is appropriate for use in non-mobile Japanese
+mail/news messages.
+
+=item $output = EncodedWord::Encoder->encode_structured_sjis($input);
+
+Encodes the input string in a format that can be used in structured
+header fields.  Characters are encoded in Shift JIS.  This method is
+appropriate for use in mobile (Galápagos) Japanese mail/news messages.
+
+=item $output = EncodedWord::Encoder->encode_unstructured_sjis($input);
+
+Encodes the input string in a format that can be used in unstructured
+header fields.  Characters are encoded in Shift JIS.  This method is
+appropriate for use in mobile (Galápagos) Japanese mail/news messages.
+
+=back
+
+=head1 SEE ALSO
+
+RFC 2047 <http://tools.ietf.org/html/rfc2047>.
+
+RFC 2231 <http://tools.ietf.org/html/rfc2231>.
+
+SuikaWiki:encoded-word
+<http://suika.fam.cx/~wakaba/wiki/sw/n/encoded-word>.
+
+=head1 HISTORY
+
+=over 4
+
+=item 1.0 (2010-08-06)
+
+First version.
+
+=back
+
+=head1 AUTHOR
+
+Wakaba (id:wakabatan) <wakabatan@hatena.ne.jp>.
+
+=head1 LICENSE
+
+Copyright 2010 Hatena <http://www.hatena.ne.jp/>.
+
+This library is free software; you can redistribute it and/or modify
+it under the same terms as Perl itself.
+
+=cut

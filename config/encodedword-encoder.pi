@@ -1,0 +1,18 @@
+{
+    main_module_name => 'EncodedWord::Encoder',
+    file_names => [qw(
+        lib/EncodedWord/Encoder.pm
+        lib/EncodedWord/Encoder.pod
+        t/encodedword-encoder.t
+        config/encodedword-encoder.pi
+    )],
+    req_modules => {
+        'MIME::Base64' => 0,
+        'Encode' => 0,
+    },
+    t_req_modules => {
+        'Path::Class' => 0,
+        'Test::More' => 0,
+        'Test::Class' => 0,
+    },
+};
