@@ -69,12 +69,12 @@ appropriate for use in mobile (Galápagos) Japanese mail/news messages.
 
 =head1 SEE ALSO
 
-RFC 2047 <http://tools.ietf.org/html/rfc2047>.
+RFC 2047 <https://tools.ietf.org/html/rfc2047>.
 
-RFC 2231 <http://tools.ietf.org/html/rfc2231>.
+RFC 2231 <https://tools.ietf.org/html/rfc2231>.
 
 SuikaWiki:encoded-word
-<http://suika.fam.cx/~wakaba/wiki/sw/n/encoded-word>.
+<https://suika.suikawiki.org/~wakaba/wiki/sw/n/encoded-word>.
 
 =head1 HISTORY
 
@@ -91,7 +91,7 @@ First version.
 
 =head1 AUTHOR
 
-Wakaba (id:wakabatan) <wakabatan@hatena.ne.jp>.
+Wakaba <wakaba@suikawiki.org>.
 
 =head1 LICENSE
 
